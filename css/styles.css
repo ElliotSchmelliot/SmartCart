@@ -43,17 +43,68 @@ nav li {
 	display: inline-block;
 	margin-right: 40px;
 	font-size: 16pt;
+	color: #888;
+}
+
+nav li:hover {
+	cursor: pointer;
+	color: #000;
 }
 
 
 /*** INDEX ***/
 .content {
 	margin-top: 20px;
+	color: #333;
 }
 
 .sub-title {
 	margin-top: 40px;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #aaa;
 }
 
+
+/*** DESIGN ***/
+
+
+/*** TEAM ***/
+.person-container {
+	margin: 0 auto;
+}
+
+.person-row {
+	margin-top: 20px;
+
+}
+
+.person-block {
+	width: 199px;
+	padding: 4px;
+	border: 1px solid #777;
+	border-radius: 2px;
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.person-block-first {
+	margin-left: 140px;
+}
+
+.person-name {
+
+}
+
+.person-title {
+	font-style: italic;
+	font-size: 10pt;
+	opacity: .7;
+}
+
+.person-block img {
+	width: 100%;
+}
+
+.person-content {
+	font-size: 10pt;
+}
 
