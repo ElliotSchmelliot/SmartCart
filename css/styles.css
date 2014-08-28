@@ -115,8 +115,12 @@ nav li:hover {
 /*** BODY ***/
 .content {
 	margin-top: 20px;
-	color: #333;
 }
+
+.content, .person-container {
+	color: #888;
+}
+
 
 .sub-title {
 	margin-top: 40px;
@@ -172,13 +176,13 @@ nav li:hover {
 	width: 199px;
 	padding: 4px;
 	display: inline-block;
-	background-color: #f3f3f3;
-	box-shadow: 2px 2px #EEE;
+	/*background-color: #f3f3f3;*/
+	/*box-shadow: 2px 2px #EEE;*/
 	clear: both;
 }
 
 .person-name {
-
+	color: #333;
 }
 
 .person-header {
