@@ -40,6 +40,17 @@ header, h1, h2 {
 	float: right;
 }
 
+.up-arrow {
+	width: 15px;
+	margin: 10px;
+	float: right;
+	right: 0;
+}
+
+.up-arrow:hover {
+	cursor: pointer;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -109,6 +120,10 @@ nav li:hover {
 
 .data-diagram-img {
 	width: 500px;
+}
+
+.business-model-img {
+	width: 600px;
 }
 
 .green-light {

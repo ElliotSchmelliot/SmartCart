@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>SmartCart</title>
@@ -9,14 +9,16 @@
 		<header>
 			<ul class="language-nav">
 				<li class="active-lang">EN</li>
-				<li>中文</li>
+				<li><a href="indexcn.html">中文</a></li>
 			</ul>
 			<h1 class="title">SmartCart</h1>
 			<nav>
 				<div class="divider"></div>
 				<ul>
-					<li>DESIGN</li>
-					<li><a href="#team">TEAM</a></li>
+					<li class="scroll-link" data-scroll-target="data">DATA</li>
+					<li class="scroll-link" data-scroll-target="business">BUSINESS</li>
+					<li class="scroll-link" data-scroll-target="design">DESIGN</li>
+					<li class="scroll-link" data-scroll-target="team">TEAM</li>
 				</ul>
 				<div class="divider"></div>
 			</nav>
@@ -37,18 +39,27 @@ The SmartCart is the future of the shopping process. Shopping no longer needs to
 If you hate wasting time in the supermarket as much as we do, we'd love to have both your ideas and your support. Happy shopping!
 			</div>
 			
-			<h2 class="sub-title">Storyboard</h2>
+			<div class="sub-title">
+				<img class="up-arrow" src="img/up.png" alt="top">
+				<h2>Storyboard</h2>
+			</div>
 			<div class="content">Blah blah blah</div>
 			<video width="560" height="315" controls>
 				<source src="myVideo.mp4" type="video/mp4">
 			</video> 
 
-			<h2 class="sub-title">UX Demonstration</h2>
+			<div class="sub-title">
+				<img class="up-arrow" src="img/up.png" alt="top">
+				<h2>UX Demonstration</h2>
+			</div>
 			<div class="content">
 				
 			</div>
 
-			<h2 class="sub-title">Data Modeling/Analysis</h2>
+			<div class="sub-title">
+				<img class="up-arrow" src="img/up.png" alt="top">
+				<h2 id="data">Data Modeling/Analysis</h2>
+			</div>
 			<div class="content">
 The following diagram is a simplified model of what key data the SmartCart system will record and analyze. The customer is the focal point of both the diagram and the system. A customer will be represented by an anonymous number until a non-cash payment is recorded. If card or online payments are used, specific customer details can be recorded such as firstName, lastName, and birthday.
 <div class="text-spacing"></div>
@@ -56,22 +67,26 @@ A CustomerInstance represents a single moment in time during the shopping trip. 
 				<img class="center-img data-diagram-img" src="img/dataDiagram.png" alt="data diagram">
 			</div>			
 
-			<h2 class="sub-title">Prototypes</h2>
+			<div class="sub-title">
+				<img class="up-arrow" src="img/up.png" alt="top">
+				<h2>Prototypes</h2>
+			</div>
 			<div class="content">
 				
 			</div>
 
-			<h2 class="sub-title">Business Proposition</h2>
+			<div class="sub-title">
+				<img class="up-arrow" src="img/up.png" alt="top">
+				<h2 id="business">Business Proposition</h2>
+			</div>
 			<div class="content">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<img class="business-model-img center-img" src="img/businessModel.png" alt="business model">
 			</div>
 
-			<h2 class="sub-title">Design Process</h2>
+			<div class="sub-title">
+				<img class="up-arrow" src="img/up.png" alt="top">
+				<h2 id="design">Design Process</h2>
+			</div>
 			<div class="content">
 				We spent one week doing field studies and investigating how people shop in the grocery store. We interviewed 20 individuals and observed 10 people in a Carrifour supermarket near Peking University.
 				<img class="center-img" src="img/userstudy.jpg" alt="user study">
@@ -104,7 +119,10 @@ A CustomerInstance represents a single moment in time during the shopping trip. 
 				<img class="center-img" src="img/Payment.jpg" alt="payment screen"></img>
 			</div>
 
-			<h2 id="team" class="sub-title">The Team</h2>
+			<div class="sub-title">
+				<img class="up-arrow" src="img/up.png" alt="top">
+				<h2 id="team">The Team</h2>
+			</div>
 			<div class="content">
 				We are the SmartCart team. Our team consists of six wonderfully innovative students with a variety of interests and backgrounds. Each team member has his/her own areas of expertise from technology to user experience to business analysis. We have one American student from Seattle, WA and five Chinese students from around the country. Together we represent a mixing pot with a vision to simplify the routine shopping experience. Our team assembled during an intensive three-week product development course at Peking University in Beijing.
 			</div>
@@ -121,7 +139,7 @@ A CustomerInstance represents a single moment in time during the shopping trip. 
 				<div class="person-block right">
 					<div class="person-name">Ellen</div>
 					<div class="person-title">Information Analyst</div>
-					<img class="person-img" src="#" alt="ellen">
+					<img class="person-img" src="img/Ellen.jpg" alt="ellen">
 					<div class="person-content">
 						blah 1 blah 1
 					</div>
@@ -167,8 +185,10 @@ A CustomerInstance represents a single moment in time during the shopping trip. 
 
 
 			</div>
-
-			<h2 class="sub-title">More</h2>
+			<div class="sub-title">
+				<img class="up-arrow" src="img/up.png" alt="top">
+				<h2>More</h2>
+			</div>
 			<div class="content">Our PowerPoint presentation can be found here.</div>
 		</main>
 		
@@ -176,5 +196,22 @@ A CustomerInstance represents a single moment in time during the shopping trip. 
 				<img src="img/melon.jpg" alt="super strong watermelong">
 		</footer>
 	</div>
+
+	<!-- jQuery load -->
+	<script src="js/jquery-1.11.1.min.js"></script>
 </body>
 </html>
+
+	<script type="text/javascript">
+		$(function() {
+			$('.scroll-link').click(function() {
+				var target = '#' + $(this).attr('data-scroll-target');
+				$("html, body").animate({ scrollTop: $(target).offset().top }, 1000);
+			});
+
+			$('.up-arrow').click(function() {
+				$("html, body").animate({ scrollTop: $('body').offset().top }, 1000);
+
+			});
+		});
+	</script>
