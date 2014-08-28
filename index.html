@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>SmartCart</title>
@@ -7,6 +7,10 @@
 <body>
 	<div class="container">
 		<header>
+			<ul class="language-nav">
+				<li class="active-lang">EN</li>
+				<li>中文</li>
+			</ul>
 			<h1 class="title">SmartCart</h1>
 			<nav>
 				<div class="divider"></div>
@@ -20,19 +24,42 @@
 	
 		<main>
 			<div class="content">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Do you ever dread your routine shopping trip? 
+<div class="text-spacing"></div>
+Nobody likes wasting time in the supermarket and current shopping experiences are full of inefficiencies and frustrations. Just consider your typical shopping process for a moment. Step 1: Spend time finding the product you're looking for in a potentially vast and poorly organized store. Step 2: Spend time selecting a product from a wide-array of brands with different labels, contents, and information. Step 3: Spend time waiting in a checkout line. Notice any time-related themes here...? Although the steps may be different, each has one thing in common: the use of a shopping cart. We want to use this commonality as a solution to wasting time in the supermarket.
+<div class="text-spacing"></div>
+In order to accelerate and simplify your shopping trip, we propose the creation of a SmartCart: a traditional shopping cart merged with modern technology. Imagine now that you are embarking on your usual shopping trip, but THIS time you have a SmartCart.
+<div class="text-spacing"></div>
+The first item on your list is shampoo, but you have no idea where to find it. Try using the screen attached to the cart. Just type 'shampoo' into the search box and follow the on-screen map directions through the store. Now you need to choose what type of shampoo youd like. Just use the side-by-side brand comparison tool on the screen to find exactly what you're looking for. Finally, scan your shampoo using the handheld barcode scanner attached to the cart and simply place the product in one of the ready-to-go bags already in the cart. Once you have everything on your list its time for checkout. But wait. There is no checkout. You've already scanned and bagged all of your products as you shopped. You've been ready to pay using your mobile device and exit the store all along.
+<div class="text-spacing"></div>
+The SmartCart is the future of the shopping process. Shopping no longer needs to be such a complicated chore. No more waiting and no more frustration. With the SmartCart, you have full control over how YOU want to shop. Next time you go shopping, consider the impact the SmartCart could have on your shopping routine.
+<div class="text-spacing"></div>
+If you hate wasting time in the supermarket as much as we do, we'd love to have both your ideas and your support. Happy shopping!
 			</div>
 			
-			<h2 class="sub-title">Video</h2>
+			<h2 class="sub-title">Storyboard</h2>
 			<div class="content">Blah blah blah</div>
 			<video width="560" height="315" controls>
 				<source src="myVideo.mp4" type="video/mp4">
 			</video> 
+
+			<h2 class="sub-title">UX Demonstration</h2>
+			<div class="content">
+				
+			</div>
+
+			<h2 class="sub-title">Data Modeling/Analysis</h2>
+			<div class="content">
+The following diagram is a simplified model of what key data the SmartCart system will record and analyze. The customer is the focal point of both the diagram and the system. A customer will be represented by an anonymous number until a non-cash payment is recorded. If card or online payments are used, specific customer details can be recorded such as firstName, lastName, and birthday.
+<div class="text-spacing"></div>
+A CustomerInstance represents a single moment in time during the shopping trip. This instance records a specific SmartCart at a specific location with a specific inventory of items. With this information, data analysts can track a customer's location, movement, idle time, added products, and buying tendencies throughout the duration of their shopping experience. Analysis can be used to identify store problems including product organization issues, customer bottlenecks, and ineffective advertising.
+				<img class="center-img data-diagram-img" src="img/dataDiagram.png" alt="data diagram">
+			</div>			
+
+			<h2 class="sub-title">Prototypes</h2>
+			<div class="content">
+				
+			</div>
 
 			<h2 class="sub-title">Business Proposition</h2>
 			<div class="content">
@@ -46,21 +73,39 @@
 
 			<h2 class="sub-title">Design Process</h2>
 			<div class="content">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				We spent one week doing field studies and investigating how people shop in the grocery store. We interviewed 20 individuals and observed 10 people in a Carrifour supermarket near Peking University.
+				<img class="center-img" src="img/userstudy.jpg" alt="user study">
+			</div>
+			<div class="content">
+				Based on our observations, we developed our persona: an organized female student named Lucy.
+				<ul>
+					<li>Lucy goes shopping about <span class="green-light">twice a month</span> at Carrefour, a nearby supermarket.</li>
+					<li>Lucy always <span class="green-light">uses a shopping cart</span> so that she doesn't need to carry her products around with her.</li>
+					<li>She <span class="green-light">makes a list</span> in advance, but usually ends up buying additional products that her friends recommend.</li>
+					<li>When Lucy does find the products she needs, she spends a large amount of time <span class="green-light">comparing the price and quality</span> between similar brands.</li>
+				</ul>
+				<img class="center-img" src="img/persona.jpg" alt="persona">
+			</div>
+			<div class="content">
+				After our user study, we brainstormed possible features and weighed the impact against the difficulty of implementation. In the end we decided to create a shopping cart with a digital screen that will help people primarily through product comparison and self check-out. 
+				<img class="center-img" src="img/brainstorming.jpg" alt="brainstorming"></img>
+			</div>
+			<div class="content">
+				During prototyping, we went through 5 iterations. We initially started with paper prototypes. We later developed clickable wireframes, a hi-fi UI, 3D cart models, and finally an interactive prototype on iPad.
+				<img class="center-img" src="img/homepage.jpg" alt="home screen"></img>
+				<div class="mini-divider"></div>
+				<img class="center-img" src="img/SearchResult.jpg" alt="results screen"></img>
+				<div class="mini-divider"></div>
+				<img class="center-img" src="img/Details.jpg" alt="details screen"></img>
+				<div class="mini-divider"></div>
+				<img class="center-img" src="img/Payment.jpg" alt="payment screen"></img>
 			</div>
 
-			<h2 class="sub-title">Team Introduction</h2>
+			<h2 class="sub-title">The Team</h2>
 			<div class="content">
 				<img src="img/melon.jpg">
 				This is our team. We call ourselves the SUPER STRONG WATERMELON team for no particular reason. We are all super cool. We never swear or insult each other. We have mad respect for each other. Appjo-how-bong-bong.
 			</div>
-
-			<h2 class="sub-title">Who we are</h2>
 			<div class="person-container">
 				<div class="person-row">
 					<div class="person-block person-block-first">

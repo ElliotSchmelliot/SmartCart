@@ -22,6 +22,16 @@ header, h1, h2 {
 	border-bottom: 1px solid #000;
 }
 
+.mini-divider {
+	width: 80%;
+	border-bottom: 1px solid #000;
+	margin: 10px auto;
+}
+
+.text-spacing {
+	margin-top: 10px;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -32,8 +42,17 @@ h1, h2 {
 	margin: inherit;
 }
 
+.center-img {
+	display: block;
+	margin: 0 auto;
+}
+
 
 /*** HEADER ***/
+header {
+	position: relative;
+}
+
 .title {
 	font-size: 32pt;
 	text-align: center;
@@ -51,8 +70,25 @@ nav li:hover {
 	color: #000;
 }
 
+.language-nav {
+	position: absolute;
+	right: 0;
+}
 
-/*** INDEX ***/
+.language-nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.language-nav li:hover {
+	cursor: pointer;
+}
+
+.active-lang {
+	border-bottom: 2px solid #000;
+}
+
+/*** BODY ***/
 .content {
 	margin-top: 20px;
 	color: #333;
@@ -63,8 +99,13 @@ nav li:hover {
 	border-bottom: 1px solid #aaa;
 }
 
+.data-diagram-img {
+	width: 500px;
+}
 
-/*** DESIGN ***/
+.green-light {
+	color: #86d125;
+}
 
 
 /*** TEAM ***/
